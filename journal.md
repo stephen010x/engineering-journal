@@ -7,10 +7,10 @@ I will be honest, at first I was sceptical about keeping an "engineering journal
 
 **Date: 2025 Jan 9** \
 *Subject: C++ sucks, but not as much as Javascript* \
-Listen, we all know it. At least everybody who has learned any better language knows it. C++ is just not good. But it would at least be preferrable to Javascript, as I can at least pretend it is C. \
-You see, I am taking Bart's graphics class this semester. Javascript is already a language I am familiar with. But my lord I am quickly learning that some of the webapi's for javascript are just god awful. Especially in an untyped language such as JS. Especially WebGL. If only there was some way to make it typed\.\.\. \
-Actually, that is exactly what I am planning to do. <br>
-Bart gave us a framework to base our assignments off of. And it makes these assignments stupid easy. How am I suppose to learn how to use webgl if bart already wrote it for me? Therefore, I have decided to rewrite his entire framework in C, and then compile it to webgl to be implemented into a web enviroment. \
+Listen, we all know it. At least everybody who has learned any better language knows it. C++ is just not good. But it would at least be preferrable to Javascript, as I can at least pretend it is C.
+You see, I am taking Bart's graphics class this semester. Javascript is already a language I am familiar with. But my lord I am quickly learning that some of the webapi's for javascript are just god awful. Especially in an untyped language such as JS. Especially WebGL. If only there was some way to make it typed\.\.\.
+Actually, that is exactly what I am planning to do.
+Bart gave us a framework to base our assignments off of. And it makes these assignments stupid easy. How am I suppose to learn how to use webgl if bart already wrote it for me? Therefore, I have decided to rewrite his entire framework in C, and then compile it to webgl to be implemented into a web enviroment.
 It has honestly been a great learning experience in learning the opengl api, and in compiling C to webasm. I already have most of the framework written. I just need to find or implement my own library for handling matrices so that I can set up the viewport matrices.
 
 
