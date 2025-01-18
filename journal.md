@@ -24,3 +24,5 @@ At least there seems to be prospects for me to learn how to design a PCB board. 
 I have been spending the past two weeks trying to compile C to Webasm and Javascript. Even with tools such as Emscripten that provide an entire wrapper library for the C standard libs, it is still a nightmare to develop with.
 For instance, what is to stop you from trying to allocate global memory for a struct with a flexible array member, but to accidentally allocate the space for the flexible array member in a completely different part of memory, thereby overwriting vital JS objects for the printf wrapper, thereby causing all subsequent calls to printf to fail dramatically?
 Anyhow, through this process I have managed to learn things about emcc, javascript, webgl, and even C. And it *almost* works. I just need to get the viewport matrices right. I should probably just start with a simpler render model, and then branch out from there.
+
+VS Code sucks
