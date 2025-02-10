@@ -36,10 +36,27 @@ The previous entry was really a preface to this entry. I am very resistant to ev
 This brings us to Code Composer Studio. In my Embedded Systems II class, we have to use Code Composer studio in order to program this archeic MSP430 microcontroller. Based on our labs, the CCS IDE is kind of awful, and absolutely convoluted. I am completely resolved to never using CCS for the rest of this class. My mission has been to remain on the command line with a good ol-fashioned makeflie to handle all the tedious parts. This path I have taken has been met with... mixed results. Both me and Jason have been spending the past few days trying to compile both C and Assembly independant of CCS, and flashing it to the microcontroller. I found an official TI GCC toolchain for compiling to the microcontroller, as well as an official tool for flashing. We actually got the C code to compile and flash to the microcontroller successfully, with expected behavior. However, we ran into a great multitude of problems whilst trying to assemble our assembly code, and have spent the rest of the day trying to figure out how to get the assembly to work. At this point I am pretty sure the msp430 versions of objcopy and the objdump executables are buggy and unreliable for extracting the hex for flashing.
 However, I am moving onto the next phase of my plan. I downloaded CCS today on my pc, and not because I plan to use it. But instead, I realized that the CCS has it's own dedicated toolchain of C/C++ compilers, debuggers, assemblers, hex extractors, and flashers. Each and every single one of them a *completely standalone executable*. They were all beautifully standalone, and each of them have some measure of documentation if you know where to look. The CCS toolchain appears to be exclusively found within the CCS installer, as I could not find them anywhere else on the World Wide Web. But that should pose no problem. The wonderful standalone CCS toolchain is just a copy-and-paste away from being relocated to my project directory, and I could thereafter delete the Convoluted Code Composer Studio from the face of my digital world.
 
+**Date: Tuesday, Jan 28, 2025** \
+*Subject: Kicad is actually good? Nah, Kicad sucks* \
+So my Turbo Regatta group were planning to go with a pcb design for our electronics. However, I have been finding that a terrible pain. Kicad is honestly kind of nice, but it isn't logisim nice. Good enough to design a PCB board with at least. However, the biggest issue is being able to find PCB parts that can be imported into Kicad. But even when you do, Kicad's import tools are absolute garbage. Like, good heavens please end my misery.
 
-#### Potential Future topics:
+**Date: Monday, Feb 10, 2025** \
+*Subject: I suck* \
+Whoops. I kind of forgot about this journal. Well, time to make up for lost time by adding two entries this week.
+So I guess what I did this and last week: I love showing off to my professors. This week for my graphics class we were assigned to create a bunch of bouncing balls with gravity for an assignment. The problem is though that I did such a good job writing the physics engine and with keeping everything vectorized that I 'accidentally' made a 3D ball collision framework. And in order to use it for 2D balls, I simply just stacked the balls so perfectly aligned on the z-axis that they ignored the z-axis entierly. That was, until I accidentally added a tiny force on the z-axis, causing the 2D stack to become unstable and collapse into a 3D stack. And well, when that happened, I figured, why not go all the way? So I generated a spherical mesh using longitudal strips, wrote a vertex shader that encorperated directional lighting. That was the first time I ever successfully wrote shader code. And honestly... I love it.
+
+**Date: Monday, Feb 11, 2025** \
+*Subject: WebGL sucks* \
+I am lying a little with the title that WebGL sucks. But I have to keep up the naming theme, you know?
+Anyhow, WebGL is still kind of a pain, and I would like it a lot less if it weren't for programmable shaders. In fact, I have since discovered a shading language specific to Microsoft's DirectX called HLSL. And as much as I love GLSL shaders, I *love* HLSL. It's language philosophy and approach to programmable shaders is just... it's so good. You can upload vertex data as struct data members instead of OpenGL's stupid attribute stuff. And, while GLSL treats data passed from one shader to the next as global syntax, HLSL actually treats them as input parameters and output return values to a function, which is... it's just so much better. I mean, come on! It isn't even that big of a difference, but it is just so...
+
+<img title="" src="./media/feels-good.png" alt="" width="128">
+
+I think when I get around to writing a C framework around OpenGL, I am going to try to use HLSL, and compile it to Spir-V so that I can use it with OpenGL.
+
+
+### Potential Future topics:
  - Windows sucks
  - Linux sucks
  - Assembly sucks (not really. Assembly is actually cool)
- - Kicad is actually good? (nah)
  - C is cool. (I could probably segue this one when I start programming the microcontrollers for the turbo regatta)

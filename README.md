@@ -1,4 +1,4 @@
-![Hey buddy, I'm an engineer.](./engineer.jpeg)
+![Hey buddy, I'm an engineer.](./media/engineer.jpeg)
 # Hey look buddy, I'm an engineer.
 
 *That means I solve problems.*
